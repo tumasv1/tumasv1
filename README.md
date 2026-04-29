@@ -9,7 +9,7 @@
 ### 🚀 Чем занимаюсь сейчас
 
 - 📚 Изучаю LangGraph, LangChain, RAGAS, векторный поиск
-- 🏗️ Строю production-ready RAG-систему на CPU-only железе
+- 🏗️ Строю production-ready RAG-систему
 - 📝 Документирую архитектурные решения через ADR
 
 ---

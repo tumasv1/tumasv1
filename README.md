@@ -40,4 +40,4 @@
 
 ---
 
-📧 [tumasv1@mail.ru](mailto:tumasv1@mail.ru)
+📧 [tumasv1@gmail.com](mailto:tumasv1@gmail.com)

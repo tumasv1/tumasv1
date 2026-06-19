@@ -53,4 +53,4 @@ Production-инфраструктура на LiteLLM Proxy для управле
 
 ---
 
-📧 [tumasv1@gmail.com](mailto:tumasv1@gmail.com)
+📬 Связаться со мной: [![Telegram](https://img.shields.io/badge/Telegram-@MikhailTumasov-2CA5E0?style=flat&logo=telegram&logoColor=white)](https://t.me/MikhailTumasov) · [![Email](https://img.shields.io/badge/Email-tumasv1@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:tumasv1@gmail.com)

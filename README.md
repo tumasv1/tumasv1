@@ -38,7 +38,7 @@
 Персональный ИИ-ассистент поверх Obsidian vault. Production deployment на личном сервере.
 
 - 🧠 LangGraph ReAct-агент + гибридный поиск (dense + BM25 + RRF)
-- 📦 Parent-Child чанкинг, RAGAS-оценка (18 golden cases), 12 ADR
+- 📦 Parent-Child чанкинг, RAGAS-оценка (18 golden cases), 13 ADR
 - ⚙️ FastAPI + PWA, Docker Compose, GitHub Actions CI/CD
 
 ---

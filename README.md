@@ -1,56 +1,46 @@
-## 👤 Михаил Тумасов
+## Михаил Тумасов
 
-**AI Technical / Product Manager · Архитектура LLM-слоя · Управление AI-командами**
+Архитектор LLM-слоя и AI Technical Manager. 9+ лет в IT: системный аналитик -> проджект -> руководитель отдела из 18 аналитиков в финтех. Сейчас проектирую и строю LLM-инфраструктуру целиком, от архитектурных решений до продакшн на собственном сервере.
 
-9+ лет в IT: системный анализ, управление проектами, руководство командой аналитиков.
-Выстраиваю LLM-инфраструктуру и агентские архитектуры — от прототипа до production: шлюзы, RAG-системы, агенты, метрики качества.
+Ищу роль на стыке архитектуры и управления: AI Technical Manager, AI Product Manager, архитектор LLM-слоя.
 
-> 💼 Открыт к предложениям — ищу роль AI Technical Manager / AI Product Manager
+### LLM-контур, который я спроектировал и держу в проде
 
----
+Проекты ниже складываются в единую платформу. Тот же набор слоев строят внутренние LLM-команды крупных компаний:
 
-### 🚀 Чем занимаюсь сейчас
+```
+ приложения: RAG-агент, Telegram-боты, Harness агенты
+      |
+ LLM-шлюз (LiteLLM): маршрутизация, fallback, бюджеты
+      |
+ провайдеры: OpenRouter, DeepSeek и др.
+      |
+ observability: Langfuse (трейсы) + Prometheus/Grafana (метрики)
+```
 
-- 🏗️ Строю production LLM-инфраструктуру (LLM-шлюз, мультитенантность, бюджеты, fallback)
-- 🤖 Разрабатываю агентные RAG-системы на LangGraph
-- 📊 Применяю RAGAS и golden sets для оценки качества AI-систем
+Каждое архитектурное решение записано с альтернативами и trade-offs: только в проекте Agentic-RAG 16 ADR.
 
----
+**[Agentic-RAG](https://github.com/tumasv1/RAGv2-Agentic-RAG)**: агентный RAG-ассистент по базе знаний Obsidian.
+Async LangGraph ReAct-агент с гибридным поиском (dense e5-large + BM25 + RRF fusion), Parent-Child чанкинг, кросс-энкодер reranking, guardrails против зацикливания и галлюцинаций. Качество измеряю, а не оцениваю на глаз: RAGAS на 18 golden set, faithfulness 0.85.
 
-### 🛠️ Навыки
+**[LLM Gateway](https://github.com/tumasv1/LLM-gateway)**: единая точка доступа ко всем LLM-провайдерам.
+LiteLLM Proxy с маршрутизацией и fallback. Виртуальные ключи с бюджетами и лимитами rpm/tpm по проектам, учет расходов в PostgreSQL. Через шлюз ходят все AI-инструменты.
 
-| Область | Уровень |
-|---|---|
-| 🤖 LLM-агенты (LangGraph, ReAct, tools) | Практический опыт |
-| 🔍 RAG-архитектуры (гибридный поиск, чанкинг) | Практический опыт |
-| 📊 Оценка качества AI (RAGAS, golden sets) | Практический опыт |
-| 🏗️ LLM-инфраструктура (LiteLLM, шлюзы, мультитенантность) | Практический опыт |
-| 🐳 Docker, GitHub Actions, CI/CD | Использую в проектах |
-| 👥 Управление AI-командами и продуктом | 5 лет опыта |
-| 🐍 Python (LangChain, FastAPI, Pydantic) | Активно использую |
+**[Langfuse](https://github.com/tumasv1/Langfuse)**: self-hosted трейсинг LLM-запросов.
+Полный стек v3 (ClickHouse, PostgreSQL, Redis, MinIO) в изолированном LXC. Два источника трейсов в один проект: шлюз дает плоские вызовы, LangGraph-агент отдает полное дерево диалога. Видно, на каком шаге агент что происходит и сколько стоит каждый ответ.
 
----
+Плюс несколько проектов поменьше: [Telegram-бот](https://github.com/tumasv1/bot-speech2text) для транскрибации встреч с диаризацией спикеров и авто-резюме, и автономный AI-агент с интеграциями Mail, Calendar и Obsidian (через собственный MCP-сервер).
 
-### 💡 Проекты
+### Стек
 
-**[RAGv2 — Агентный RAG по базе знаний Obsidian](https://github.com/tumasv1/RAGv2-Agentic-RAG)**
+LangGraph / LangChain, RAGAS, LiteLLM, Langfuse, MCP, FastAPI, Qdrant, PostgreSQL, Redis, Docker, Grafana, Python.
 
-Персональный ИИ-ассистент поверх Obsidian vault. Production deployment на личном сервере.
+### Что я умею как управленец
 
-- 🧠 LangGraph ReAct-агент + гибридный поиск (dense + BM25 + RRF)
-- 📦 Parent-Child чанкинг, RAGAS-оценка (18 golden cases), 13 ADR
-- ⚙️ FastAPI + PWA, Docker Compose, GitHub Actions CI/CD
+- Руководил группой из 18 аналитиков, за год вырастил ее на 70%
+- Выстроил процессы: SDLC, SLA, оценка трудозатрат, онбординг, вторая линия поддержки
 
----
-
-**[LLM-gateway — Единый шлюз ко всем LLM-моделям](https://github.com/tumasv1/LLM-gateway)**
-
-Production-инфраструктура на LiteLLM Proxy для управления всеми AI-инструментами из одной точки.
-
-- 🔀 Балансировка нагрузки между провайдерами + автоматический fallback
-- 💰 Мультитенантность: virtual keys с бюджетами, лимитами rpm/tpm и списком разрешённых моделей
-- 🐳 Docker Compose (LiteLLM + PostgreSQL + Redis), ежедневные бэкапы
 
 ---
 
-📬 Связаться со мной: [![Telegram](https://img.shields.io/badge/Telegram-@MikhailTumasov-2CA5E0?style=flat&logo=telegram&logoColor=white)](https://t.me/MikhailTumasov) · [![Email](https://img.shields.io/badge/Email-tumasv1@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:tumasv1@gmail.com)
+Telegram: [@MikhailTumasov](https://t.me/MikhailTumasov) · Почта: tumasv1@gmail.com

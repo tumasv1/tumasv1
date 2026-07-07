@@ -4,7 +4,7 @@
 
 Ищу роль на стыке архитектуры и управления: AI Technical Manager, AI Product Manager, Архитектор LLM-слоя.
 
-### LLM-контур, который я спроектировал и держу в проде
+### 🏗️ LLM-контур, который я спроектировал и держу в проде
 
 Проекты ниже складываются в единую платформу. Тот же набор слоев строят внутренние LLM-команды крупных компаний:
 
@@ -31,11 +31,18 @@ LiteLLM Proxy с маршрутизацией и fallback. Виртуальны�
 
 Плюс несколько проектов поменьше: [Telegram-бот](https://github.com/tumasv1/bot-speech2text) для транскрибации встреч с диаризацией спикеров и авто-резюме, и автономный AI-агент с интеграциями Mail, Calendar и Obsidian (через собственный MCP-сервер).
 
-### Стек
+### 🛠️ Навыки
 
-LangGraph / LangChain, RAGAS, LiteLLM, Langfuse, MCP, FastAPI, Qdrant, PostgreSQL, Redis, Docker, Grafana, Python.
+| Область | Чем подтверждено |
+|---|---|
+| Агентные архитектуры: LangGraph, ReAct, MCP, guardrails | [Agentic-RAG](https://github.com/tumasv1/RAGv2-Agentic-RAG), автономный агент с MCP-сервером |
+| RAG: гибридный поиск, чанкинг, reranking | [Agentic-RAG](https://github.com/tumasv1/RAGv2-Agentic-RAG), 16 ADR |
+| Оценка качества LLM: RAGAS, golden sets, LLM-судья | faithfulness 0.85 на 18 кейсах |
+| LLM-инфраструктура: шлюз, бюджеты, мультитенантность | [LLM Gateway](https://github.com/tumasv1/LLM-gateway) |
+| Observability: трейсинг, метрики, расходы | [Langfuse](https://github.com/tumasv1/Langfuse) + Prometheus/Grafana |
+| Python, FastAPI, Qdrant, PostgreSQL, Redis, Docker | весь стек выше написан и развернут мной |
 
-### Что я умею как управленец
+### 👥 Что я умею как управленец
 
 - Руководил группой из 18 аналитиков, за год вырастил ее на 70%
 - Выстроил процессы: SDLC, SLA, оценка трудозатрат, онбординг, вторая линия поддержки
@@ -43,4 +50,4 @@ LangGraph / LangChain, RAGAS, LiteLLM, Langfuse, MCP, FastAPI, Qdrant, PostgreSQ
 
 ---
 
-Telegram: [@MikhailTumasov](https://t.me/MikhailTumasov) · Почта: tumasv1@gmail.com
+📬 Связаться со мной: [![Telegram](https://img.shields.io/badge/Telegram-@MikhailTumasov-2CA5E0?style=flat&logo=telegram&logoColor=white)](https://t.me/MikhailTumasov) · [![Email](https://img.shields.io/badge/Email-tumasv1@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:tumasv1@gmail.com)

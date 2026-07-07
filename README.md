@@ -4,6 +4,7 @@
 
 > Ищу роль на стыке архитектуры и управления: AI Technical Manager, AI Product Manager, Архитектор LLM-слоя.
 
+---
 
 ### 🏗️ LLM-контур, который я спроектировал и держу в проде
 
@@ -32,6 +33,7 @@ LiteLLM Proxy с маршрутизацией и fallback. Виртуальны�
 
 Плюс несколько проектов поменьше: [Telegram-бот](https://github.com/tumasv1/bot-speech2text) для транскрибации встреч с диаризацией спикеров и авто-резюме, и автономный AI-агент с интеграциями Mail, Calendar и Obsidian (через собственный MCP-сервер).
 
+---
 
 ### 🛠️ Навыки
 
@@ -44,6 +46,7 @@ LiteLLM Proxy с маршрутизацией и fallback. Виртуальны�
 | Observability: трейсинг, метрики, расходы | [Langfuse](https://github.com/tumasv1/Langfuse) + Prometheus/Grafana |
 | Python, FastAPI, Qdrant, PostgreSQL, Redis, Docker | весь стек выше написан и развернут мной |
 
+---
 
 ### 👥 Что я умею как управленец
 
